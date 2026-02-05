@@ -1,0 +1,194 @@
+
+
+/** Layout */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-main);
+}
+
+.container {
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+    color: var(--text-primary-dark);
+}
+
+/** header */
+
+header{
+    background-color: var(--bg-off-white);
+}
+
+.header-wrapper{
+    flex-direction: row;
+    padding: 4rem 0;
+}
+
+.site-content{
+    width: max-content;
+    gap: .25rem
+}
+
+.site-title{
+    font-size: 3.4rem;    
+    text-transform:capitalize;
+}
+
+.site-subtitle{
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+/** Navigation */
+
+.nav {
+    width: max-content;
+    margin-top: 1.5rem;
+}
+
+.nav__list {
+    gap: 2rem;
+}
+
+.nav__link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--color-primary);
+}
+
+.nav__link--active {
+  color: var(--color-primary-dark);
+  border-bottom-color: var(--color-primary-dark);
+}
+
+/** Content */
+.wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+
+.content{
+    flex: 100 1 400px;
+}
+
+.sidebar{
+    flex: 1 1 250px;
+    gap: 2rem;
+}
+
+/** Intro Postt */
+
+.intro{
+    row-gap: 2rem;
+}
+
+.intro img{
+    max-height: 310px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.intro .post-date{
+    font-size: 1.4rem;
+}
+
+.intro .post-title{
+    font-size: 2.4rem;
+}
+
+.intro .post-link{
+    text-transform: uppercase;
+}
+
+/** Posts */
+
+.posts{
+    margin: 5rem 0;
+    row-gap: 2rem;
+}
+
+.post{
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.post-left{
+    flex: 1 1 200px; 
+    gap: 1rem
+}
+
+.post-left img{
+    height: 225px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post-right .post-title{
+    font-size: 2.1rem;
+}
+
+.post-left .post-date{
+    font-size: 1.4rem;
+}
+
+.post-right{
+    flex: 2 1 350px;
+    gap: 1rem;
+}
+
+/** Sidebar */
+
+.sidebar__box{
+    gap: 2rem;
+    padding: 1.5rem;
+    border: 1.5rem solid var(--bg-light-gray);
+    border-radius: 5px;
+}
+
+.sidebar__title{
+    text-transform: uppercase;
+}
+
+.recent-posts{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recent-posts li{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer{
+    background-color: var(--color-primary-dark);
+    padding: 4rem 0;
+    margin-top: 5rem;
+    color: var(--color-white);
+}
+
+/** Media Queries */
+
+/* @media (max-width: 675px) {
+
+} */
