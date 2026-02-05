@@ -26,6 +26,8 @@ header{
 
 .header-wrapper{
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
     padding: 4rem 0;
 }
 
