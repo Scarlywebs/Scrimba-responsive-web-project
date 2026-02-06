@@ -97,23 +97,32 @@ header{
     gap: 2rem;
 }
 
-/** Intro Postt */
+/** Intro Postt/ about page */
 
-.intro{
+.intro, .about{
     row-gap: 2rem;
 }
 
-.intro img{
-    max-height: 310px;
+.intro img, .about img{    
     object-fit: cover;
     border-radius: 10px;
 }
 
-.intro .post-date{
+.intro img{
+    max-height: 310px;
+}
+
+.about img{
+    max-height: 410px;
+}
+
+.intro .post-date,
+.about .post-date{
     font-size: 1.4rem;
 }
 
-.intro .post-title{
+.intro .post-title,
+.about .post-title{
     font-size: 2.4rem;
 }
 
